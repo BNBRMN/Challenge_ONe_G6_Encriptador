@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Encriptador Challenge</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/Logo.svg" alt="Logo del encriptador">
+    </header>
+    <main>
+        <section aria-labelledby="instructions-heading" class="seccion1">
+            <h2 id="instructions-heading" class="visually-hidden">Instrucciones</h2>
+            <div class="contenedorcajatexto">
+                <label for="input-text" class="visually-hidden">Ingrese el texto aquí</label>
+                <textarea id="input-text" placeholder="Ingrese el texto aquí" class="cajatexto"></textarea>
+            </div>
+            <div class="alerta" role="alert">
+                <img src="Imagenes/alerta.svg" alt="">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedor-botones">
+                <button type="button" class="btn-encriptar">Encriptar</button>
+                <button type="button" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section aria-labelledby="results-heading" class="seccion2">
+            <h2 id="results-heading" class="visually-hidden">Resultados</h2>
+            <div class="contenedormunieco">
+                <img src="Imagenes/Muñeco.svg" alt="Imagen decorativa de un muñeco">
+            </div>
+            <div class="contenedor-parrafo">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="contenedor-copiar">
+                <button type="button" class="btn-copiar">Copiar</button>
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
